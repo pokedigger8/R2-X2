@@ -45,3 +45,4 @@ client.on('message', message =>{
 });
 
 client.login(process.env.DISCORD_TOKEN);
+listen(process.env.PORT || 5001)
