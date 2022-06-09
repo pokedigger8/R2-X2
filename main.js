@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 
 require('dotenv').config();
 
-const keepAlive = require('./server');
-
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
 
 const prefix = '!';
@@ -47,4 +45,3 @@ client.on('message', message =>{
 });
 
 client.login(process.env.DISCORD_TOKEN);
-keepAlive();
